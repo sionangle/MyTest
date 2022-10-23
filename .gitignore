@@ -1,0 +1,8 @@
+*.[oa]
+*~
+*.a           # 忽略.a类型的文件
+!lib.a        # 任然跟踪lib.a文件，即使上一行指令要忽略.a类型的文件
+/TODO         # 忽略当前目录中的TODO文件，而不忽略子目录下的TODO文件
+build/        # 忽略build文件下的所有文件
+doc/*.txt     # eg：忽略doc/notes.txt而不忽略doc/server/arch.txt
+doc/**.pdf    # 忽略doc/目录下的所有的.pdf文件
